@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icono chat</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6-COTIZADOR" transform="translate(-251.000000, -746.000000)" fill="#ED1C25" fill-rule="nonzero">
+            <g id="DATOS" transform="translate(152.000000, 284.000000)">
+                <g id="Group-9" transform="translate(0.000000, 413.000000)">
+                    <g id="icono-chat" transform="translate(99.000000, 49.000000)">
+                        <path d="M2.80370693,16.9753615 L1.43926687,16.9753615 L2.40406547,16.0105629 C2.92427379,15.4903546 3.24912612,14.8137484 3.33646174,14.07976 C1.10872529,12.6178115 0,10.4999039 0,8.27958989 C0,4.18336856 3.76481318,0.0206470745 9.66094699,0.0206470745 C15.9072522,0.0206470745 19.2566372,3.85113151 19.2566372,7.9207151 C19.2566372,12.0171248 15.8718733,15.8450472 9.66094699,15.8450472 C8.57294413,15.8450472 7.43761877,15.6998018 6.42399059,15.4333114 C5.46446678,16.417476 4.16437928,16.9753615 2.80370693,16.9753615 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
