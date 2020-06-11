@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-h1, h4, .nav-item, .form-control, button, h6, footer a, footer h5, .copy, .brand-industry {
+h1, h4, .nav-item, .form-control, button, h6, footer a, footer h5, .copy, .brand-industry, .categorias-md-p h5 {
     font-family: 'Baloo Tamma 2', cursive;
 }
 
@@ -45,11 +45,24 @@ header {
 
 /* Headroom fin */
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .contacto-completo {
     width: 100%;
     height: 30px;
     padding-top: 5px;
     background-color: #0053A0;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.contacto-completo-dark {
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    background-color: #555555;
     color: #ffffff;
     font-size: 15px;
 }
@@ -71,6 +84,11 @@ header {
 .navbar {
     padding-bottom: 0px;
     border-bottom: 2px solid #ffffff;
+}
+
+.navbar-white {
+    padding-bottom: 0px;
+    border-bottom: 1px solid #000000;
 }
 
 .nav-item {
@@ -629,6 +647,173 @@ footer {
 
 .derechos-align {
     display: inline-block;
+}
+
+.breadcrumb {
+    background-color: #ffffff !important;
+}
+
+.breadcrumb a {
+    color: #000000;
+}
+
+.breadcrumb .active {
+    color: red;
+    font-weight: 100;
+}
+
+.categorias-md-p {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.categorias-md-p:hover {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.categorias-md-p h5 {
+    position: absolute;
+    top: 260px;
+    left: -10px;
+    color: #555555;
+}
+
+.categorias-md-p img {
+    width: 90%;
+}
+
+.categorias-md-p .big-img {
+    width: 60%;
+}
+
+.categorias-md-p .left-img {
+    position: relative;
+    left: -50px;
+}
+
+.categorias-md-p .discos-pasta {
+    position: relative;
+    width: 80%;
+    right: -50px;
+}
+
+.categorias-md-p .direcciones-img {
+    position: relative;
+    left: -30px;
+    width: 60%;
+}
+
+.left-img-nw {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 150px;
+}
+
+.filtro-busqueda{
+    background-color: #0053A0;
+    width: 100%;
+}
+
+.filtro-busqueda h4 {
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.filtro-busqueda .btn-filtro {
+    padding-top: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+.filtro-busqueda .btn-marcas{
+    padding-top: 10px;
+    border-left: 1px solid rgb(202, 202, 202);
+    border-right: 1px solid rgb(202, 202, 202);
+    border-radius: 0px;
+}
+
+.filtro-busqueda .btn-filtro:focus, .filtro-busqueda .btn-marcas:focus {
+    background-color: #ED1C25;
+    color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F3F7FB;
+}
+
+.btn-carrito {
+    border-radius: 0px;
+    background-color: #0053A0;
+    color: #ffffff;
+}
+
+.btn-carrito:hover{
+    border-radius: 0px;
+    background-color: rgb(3, 101, 192);
+    color: #ffffff;
+}
+
+.form-table {
+    width: 80px;
+    height: 30px;
+}
+
+.descripcion-table{
+    color: #000000;
+    text-decoration: none;
+}
+
+.descripcion-table:hover {
+    cursor: pointer;
+    color: #ED1C25;
+    text-decoration: none;
+}
+
+.form-mostrar {
+    margin-left: 5px;
+    width: 200px;
+}
+
+.right-align {
+    position: relative;
+    right: 0px;
+}
+
+.page-link {
+    border: 0px;
+}
+
+.btn-descargar {
+    position: relative;
+    height: 40px;
+    background-color: #ED1C25;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+.btn-descargar:hover {
+    background-color: #d3000b;
+    color: #ffffff;
+}
+
+.icon-descargar {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    padding: 5px;
+    top: -1px;
+    padding-top: 10px;
+    margin-left: 10px;
+    background-color: #0053A0;
+    color: #ffffff;
 }
 
 /* col */
