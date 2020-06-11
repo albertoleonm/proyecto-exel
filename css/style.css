@@ -4,11 +4,11 @@
     padding: 0px;
 }
 
-h1, h4, .nav-item, .form-control, button, h6, footer a, footer h5, .copy, .brand-industry, .categorias-md-p h5 {
+h1, h4, .nav-item, .form-control, button, h6, footer a, footer h5, .copy, .brand-industry, .categorias-md-p h5, .productos-page p, .card-informacion h5, .card-informacion p {
     font-family: 'Baloo Tamma 2', cursive;
 }
 
-h3, h5, p {
+h3, h5, p  {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -97,6 +97,10 @@ header {
 
 .nav-item:hover {
     transition: 0.5s ease-in;
+    border-bottom: 5px solid #ED1C25;
+}
+
+.active-nav {
     border-bottom: 5px solid #ED1C25;
 }
 
@@ -356,7 +360,7 @@ header {
     padding-top: 50px;
 }
 
-.bandas {
+.bandas, .garantia {
     background-color: #434343;
     color: #ffffff;
 }
@@ -367,7 +371,7 @@ header {
     left: 0px;
 }
 
-.turbinas, .enfriadores {
+.turbinas, .enfriadores, .pago {
     background-color: #D8D8D8;
     color: #434343;
 }
@@ -715,7 +719,7 @@ footer {
     width: 150px;
 }
 
-.filtro-busqueda{
+.filtro-busqueda {
     background-color: #0053A0;
     width: 100%;
 }
@@ -733,7 +737,7 @@ footer {
     border-radius: 0px;
 }
 
-.filtro-busqueda .btn-marcas{
+.filtro-busqueda .btn-marcas {
     padding-top: 10px;
     border-left: 1px solid rgb(202, 202, 202);
     border-right: 1px solid rgb(202, 202, 202);
@@ -755,7 +759,7 @@ footer {
     color: #ffffff;
 }
 
-.btn-carrito:hover{
+.btn-carrito:hover {
     border-radius: 0px;
     background-color: rgb(3, 101, 192);
     color: #ffffff;
@@ -766,7 +770,7 @@ footer {
     height: 30px;
 }
 
-.descripcion-table{
+.descripcion-table {
     color: #000000;
     text-decoration: none;
 }
@@ -814,6 +818,69 @@ footer {
     margin-left: 10px;
     background-color: #0053A0;
     color: #ffffff;
+}
+
+.breadcrumb-item > a {
+    padding: 3px;
+}
+
+.productos-page p, a {
+    color: #555555;
+    font-size: 13px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.productos-page h4 {
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
+.card-cotizacion {
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #F9F9F9;
+    color: #000000;
+}
+
+.form-cotiza {
+    margin-top: 20px;
+}
+
+.card-cotizacion button {
+    position: relative;
+    top: -45px;
+    background-color: #ED1C25;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+.card-cotizacion button:hover {
+    background-color: #f70b17;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+.number-form {
+    width: 80px;
+}
+
+.card-informacion {
+    width: 100%;
+    height: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pago, .garantia {
+    padding-top: 45px;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
 }
 
 /* col */
@@ -1142,6 +1209,12 @@ footer {
     }
     .modal.left .modal-dialog {
         width: 90% !important;
+    }
+    .card-informacion {
+        width: 100%;
+        height: 350px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
