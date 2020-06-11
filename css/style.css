@@ -553,7 +553,7 @@ header {
 
 .input-group-text {
     background-color: #ffffff;
-    border: 1px transparent;
+    border: 1px solid #ced4da;
 }
 
 .catalogo-img {
@@ -883,6 +883,22 @@ footer {
     justify-content: center;
 }
 
+.btn-buscar-blue {
+    position: relative;
+    top: 20px;
+    background-color: #0053A0;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+.btn-buscar-blue:hover {
+    background-color: rgb(2, 73, 139);
+    color: #ffffff;
+}
+
+.btn-cotizador-card {
+    margin-top: 70px;
+}
 /* col */
 
 @media screen and (min-width: 350px) {
