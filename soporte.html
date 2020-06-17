@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Slick CSS-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-------------->
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&family=Barlow:wght@400;600&family=Blinker&family=Raleway:wght@400;500;700&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/headroom.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUtzIycZ2GnQ6PKuWwynG66ehv0HcR6Gw&callback=initMap&libraries=&v=weekly"
+        defer></script>
+    <script src="js/google-maps.js"></script>
+    <link rel="icon" href="./assets/img/logo_exel_blanco.svg" type="image/svg">
+    <title>Exel Mexicana | Soporte Técnico</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <!--Sección de contacto-->
+            <div class="row d-none d-lg-block d-xl-block">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin contacto-completo-dark">
+                    <div class="container">
+                        <p class="derechos-align"><img src="./assets/img/icono telefono menu.svg" class="mr-1"
+                                alt="Telefono">
+                            01 (55)
+                            5336
+                            1640</p>
+                        <p class="ml-3 derechos-align"><img src="./assets/img/icono correo menu.svg" class="mr-1"
+                                alt="Correo">
+                            contacto@exelmexicana.com.mx</p>
+                    </div>
+                </div>
+            </div>
+            <!--Inicio de la navbar con el logo-->
+            <div class="row">
+                <div
+                    class="col-12 col-sm-12 col-md-3 col-xl col-lg-3 back-logo d-none d-lg-block d-xl-block without-margin">
+                    <div class="container img-logo" id="logo-img">
+                        <img src="./assets/img/exel-color.svg" class="logo-exel-mexicana-color pt-2 pb-1"
+                            alt="Logo Exel Mexicana">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-xl-9 col-lg-9 without-margin">
+                    <nav class="navbar navbar-white navbar-expand-lg navbar-black bg-white" id="menu">
+                        <div class="container">
+                            <img src="./assets/img/exel-color.svg"
+                                class="navbar-brand d-none d-block d-sm-block d-md-block d-lg-none d-xl-none logo-color"
+                                alt="Logo exel mexicana color">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item pt-3">
+                                        <a class="nav-link ml-2" href="./">INICIO</span></a>
+                                    </li>
+                                    <li class="nav-item pt-3">
+                                        <a class="nav-link ml-2 mr-2" href="./productos.html">PRODUCTOS</a>
+                                    </li>
+                                    <li class="nav-item pt-3">
+                                        <a class="nav-link ml-2 mr-2" href="./sucursales.html">SUCURSALES</a>
+                                    </li>
+                                    <li class="nav-item pt-3">
+                                        <a class="nav-link ml-2 mr-2" href="./nosotros.html">NOSOTROS</a>
+                                    </li>
+                                    <li class="nav-item pt-3">
+                                        <a class="nav-link ml-2 mr-2" href="./blog.html">BLOG</a>
+                                    </li>
+                                    <li class="nav-item active-nav pt-3">
+                                        <a class="nav-link ml-2 mr-2" href="./soporte.html">SOPORTE TÉCNICO</a>
+                                    </li>
+                                    <li class="nav-item pt-3">
+                                        <a class="nav-link btn-cotizador ml-2 mr-2 text-center"
+                                            href="./cotizador.html"><span class="text-white">COTIZADOR</span>
+                                            <span class="oval"></span></a>
+                                    </li>
+                                    <li class="nav-item pt-3">
+                                        <a class="nav-link ml-2 mr-2" data-toggle="modal" data-target="#buscar">
+                                            <img src="./assets/img/icono buscar.svg" alt="Icono buscar">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <!-- Modal buscar -->
+        <div class="modal left fade" id="buscar" tabindex="-1" role="dialog" aria-labelledby="buscarModal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close ml-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping"><img
+                                        src="./assets/img/icono buscar.svg" alt="Svg buscar"></span>
+                            </div>
+                            <input type="text" class="form-buscar" placeholder="Buscar"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="float-left mg-top">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="./">INICIO</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">SOPORTE TÉCNICO</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 align-categorias">
+                <h4 class="callout-bottom-title text-center">SOPORTE TÉCNICO</h4>
+                <span class="callout-bottom-span"></span>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <!--inicio dropdown-->
+            <div class="col-12 col-sm-4 d-none d-sm-block d-block d-md-none d-lg-none d-xl-none">
+                <div class="dropdown">
+                    <a class="btn btn-soporte dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        GARANTIA
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item-soporte" href="#">Action</a>
+                        <a class="dropdown-item-soporte" href="#">Another action</a>
+                        <a class="dropdown-item-soporte" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 d-none d-sm-block d-block d-md-none d-lg-none d-xl-none">
+                <div class="dropdown">
+                    <a class="btn btn-soporte active-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ENVÍOS
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item-soporte" href="#">Action</a>
+                        <a class="dropdown-item-soporte" href="#">Another action</a>
+                        <a class="dropdown-item-soporte" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 d-none d-sm-block d-block d-md-none d-lg-none d-xl-none">
+                <div class="dropdown">
+                    <a class="btn btn-soporte dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DEVOLUCIÓN
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item-soporte" href="#">Action</a>
+                        <a class="dropdown-item-soporte" href="#">Another action</a>
+                        <a class="dropdown-item-soporte" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 d-none d-sm-block d-block d-md-none d-lg-none d-xl-none">
+                <div class="dropdown">
+                    <a class="btn btn-soporte dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FORMAS DE PAGO
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item-soporte" href="#">Action</a>
+                        <a class="dropdown-item-soporte" href="#">Another action</a>
+                        <a class="dropdown-item-soporte" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <!--fin dropdown-->
+            <div
+                class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 without-margin d-none d-md-block d-lg-block d-xl-block">
+                <div class="dialogo">
+                    <p class="text-dialogo">GARANTÍA</p>
+                </div>
+            </div>
+            <div
+                class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 without-margin d-none d-md-block d-lg-block d-xl-block">
+                <div class="active-soporte">
+                    <p class="text-dialogo">ENVÍOS</p>
+                </div>
+            </div>
+            <div
+                class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 without-margin d-none d-md-block d-lg-block d-xl-block">
+                <div class="dialogo">
+                    <p class="text-dialogo">DEVOLUCIÓN</p>
+                </div>
+            </div>
+            <div
+                class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 without-margin d-none d-md-block d-lg-block d-xl-block">
+                <div class="dialogo">
+                    <p class="text-dialogo">FORMAS DE PAGO</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="align-categorias">
+                    <h4 class="callout-bottom-title subtitle-soporte text-center">POLÍTICAS DE ENVÍO</h4>
+                    <span class="callout-bottom-span bottom-span"></span>
+                </div>
+                <p class="text-soporte mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                <div class="align-categorias">
+                    <h4 class="callout-bottom-title subtitle-soporte text-center">ENVÍOS INTERNACIONALES</h4>
+                    <span class="callout-bottom-span bottom-span"></span>
+                </div>
+                <p class="text-soporte mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mb-5">
+                <div class="align-categorias">
+                    <h4 class="callout-bottom-title subtitle-soporte text-center">RASTREO DE PEDIDOS</h4>
+                    <span class="callout-bottom-span bottom-span"></span>
+                </div>
+                <p class="text-soporte mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin">
+                <div class="image-form">
+                    <h4 class="cotiza-text text-center pt-5">¡COTIZA TUS PRODUCTOS AHORA!</h4>
+                    <div class="mask-input">
+                        <div class="align-form">
+                            <form>
+                                <div class="form-row align-items-center pl-2 pr-2 pb-5">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                        <label class="text-label pt-2" for="buscar">BUSCAR</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fas fa-search"></i></div>
+                                            </div>
+                                            <input type="text" class="form-control form-foo uppercase" required
+                                                id="buscar" placeholder="BUSCAR">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                        <label class="text-label pt-2" for="categoria">CATEGORÍA</label>
+                                        <select class="custom-select form-foo uppercase" required id="categoria">
+                                            <option default> SELECCIONAR</option>
+                                            <option>Bandas</option>
+                                            <option>Turbinas</option>
+                                            <option>Discos de acero</option>
+                                            <option>Discos de pasta</option>
+                                            <option>Bujes, rodanas y retenes</option>
+                                            <option>Partes electrónicas</option>
+                                            <option>Shift kits</option>
+                                            <option>Enfriadores</option>
+                                            <option>Filtros</option>
+                                            <option>Juntas y ligas</option>
+                                            <option>Volantes</option>
+                                            <option>Repuestos de direcciones</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                        <label class="text-label pt-2" for="marca">MARCA</label>
+                                        <select class="custom-select form-foo uppercase" required id="marca">
+                                            <option default>SELECCIONAR</option>
+                                            <option>ACDelco</option>
+                                            <option>BorgWarner</option>
+                                            <option>Exedy</option>
+                                            <option>LubriGold</option>
+                                            <option>Mopar</option>
+                                            <option>Raybestos</option>
+                                            <option>Transtar</option>
+                                            <option>TransGo</option>
+                                            <option>Transtec</option>
+                                            <option>ZF</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                        <button type="submit" class="btn btn-buscar mb-2">BUSCAR</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin">
+                <div class="catalogo-img">
+                    <div class="mask">
+                        <div class="container">
+                            <div class="callout-bottom mt-5">
+                                <h3 class="title-slider">DESCARGA NUESTRO CATALOGO</h3>
+                            </div>
+                            <h5 class="subtitle-slider mt-2">CALIDAD GARANTIZADA
+                            </h5>
+                            <p class="text-slider">En Exel Mexicana nos preocupamos porque tengas disponibles los
+                                mejores
+                                productos para el área
+                                automotriz. Nuestro compromiso es ofrecerte las mejores piezas que existen en el
+                                mercado. <span class="font-weight-bold">¡Conócenos!</span></p>
+                            <a class="btn btn-danger mt-4 mb-5" href="#">DESCARGA AQUÍ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin">
+                <div class="slider-marcas">
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_acdelco.png" alt="ACDelco"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_borgwarner.png" alt="BorgWarner"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_exedy.png" alt="Exedy"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_genuine.png" alt="Genuine"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_hayden.png" alt="hayden"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_lubegard.png" alt="lubegard"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_lubrigold.png" alt="lubrigold"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_rostra.png" alt="rostra"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_sonnax.png" alt="sonnax"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_transgo.png" alt="TransGo"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_transtec.png" alt="transtec"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_zf.png" alt="ZF"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/brand.gif" alt="SPX"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin">
+                <div class="contacto-asesor">
+                    <div class="mask-asesor">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <h4 class="title-slider">PONTE EN CONTACTO</h4>
+                                    <div class="media mt-3">
+                                        <img src="./assets/img/icono telefono.svg" alt="Telefono">
+                                        <div class="media-body">
+                                            <a class="contacto-text text-white" href="tel:+524423691470"> (442) 369
+                                                1470</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media mt-3">
+                                        <img src="./assets/img/icono correo.svg" alt="Correo">
+                                        <div class="media-body">
+                                            <a class="contacto-text text-white"
+                                                href="mailto:contacto@exelmexicana.com.mx">
+                                                contacto@exelmexicana.com.mx</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media mt-3">
+                                        <img src="./assets/img/icono ubicacion.svg" class="derechos-align"
+                                            alt="ubicación">
+                                        <div class="media-body">
+                                            <p class="contacto-text text-white">Av. Gustavo
+                                                Baz N° 4863 Col.
+                                                San
+                                                Pedro Barrientos Tlalnepantla de
+                                                Baz Estado de México C.P. 54010</p>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-mapa mb-3 mt-3"><a target="blank"
+                                            class="contacto-text text-white"
+                                            href="https://maps.google.com/?q=19.576712,-99.203147">VER
+                                            EN
+                                            MAPA <i class="fas fa-angle-right"></i></a></button>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <h6 class="text-contacta text-white">CONTACTA UN ASESOR</h6>
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control form-transparent"
+                                                    placeholder="Nombre" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control form-transparent"
+                                                    placeholder="Empresa" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-12 mb-3">
+                                                <input type="email" class="form-control form-transparent"
+                                                    placeholder="Correo electrónico" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-12 mb-3">
+                                                <textarea class="form-control form-transparent" placeholder="Mensaje"
+                                                    rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="text-right">
+                                            <button class="btn btn-enviar-asesor uppercase"
+                                                type="submit">Enviar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin">
+                <div class="google-maps" id="maps"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md my-auto mb-3 text-center">
+                    <img src="./assets/img/logo_exel_blanco.svg" class="img-fluid footer-logo" alt="Logo Exel Mexicana">
+                </div>
+                <div class="col-12 col-md mt-3">
+                    <ul class="list-unstyled">
+                        <li><a class="footer-link text-white" href="./">INICIO</a></li>
+                        <li class="mt-1"><a class="footer-link text-white" href="./productos.html">SUCURSALES
+                        <li class="mt-1"><a class="footer-link text-white" href="./nosotros.html">NOSOTROS</a></li>
+                        <li class="mt-1"><a class="footer-link text-white" href="./blog.html">BLOG</a></li>
+                        <li class="mt-1"><a class="footer-link text-white" href="./contacto.html">CONTACTO</a></li>
+                        <li class="mt-1"><a class="footer-link text-white" href="./soporte.html">SOPORTE TÉCNICO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md mt-3">
+                    <h5 class="footer-link text-white text-left" style="padding-left: 0px;">PRODUCTOS
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">FILTROS</a>
+                        </li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">BANDAS</a>
+                        </li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">TURBINAS</a>
+                        </li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">VOLANTES</a>
+                        </li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">SHIFT KITS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md mt-4">
+                    <ul class="list-unstyled pt-2">
+                        <li class="mt-1"><a class="footer-links-light text-white"
+                                href="./productos.html">ENFRIADORES</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white"
+                                href="./productos.html">MISCELÁNEOS</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">JUNTAS Y
+                                LIGAS</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">DISCOS DE
+                                PASTA</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">DISCOS DE
+                                ACERO</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md mt-4">
+                    <ul class="list-unstyled pt-2">
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">ACEITES Y
+                                ADITIVOS</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">PARTES
+                                ELÉCTRICAS</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">BUJES, RODANAS
+                                Y RETENES</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">RESPUESTOS DE
+                                DIRECCIONES</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container-fluid derechos-reservados">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 copy">
+                    <p><i class="far fa-copyright"></i> 2020 Exel Mexicana.
+                        Todos los
+                        derechos reservados <a href="#">Aviso legal</a></p>
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+                    <p>Developed by
+                        <a target="blank" href="https://thebrandindustry.com" class="text-white">Brand Industry</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/headroom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!--Slick JS-->
+    <script src="js/slick.js"></script>
+    <script src="./js/config-slick.js"></script>
+</body>
+
+</html>
