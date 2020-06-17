@@ -13,7 +13,15 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <!-------------->
     <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&family=Barlow:wght@400;600&family=Blinker&family=Raleway:wght@400;500;700&family=Titillium+Web&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/headroom.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUtzIycZ2GnQ6PKuWwynG66ehv0HcR6Gw&callback=initMap&libraries=&v=weekly"
+        defer></script>
+    <script src="js/google-maps.js"></script>
     <link rel="icon" href="./assets/img/logo_exel_blanco.svg" type="image/svg">
     <title>Exel Mexicana | Cotizador</title>
 </head>
@@ -23,53 +31,64 @@
         <div class="container-fluid">
             <!--Sección de contacto-->
             <div class="row d-none d-lg-block d-xl-block">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 contacto-completo-dark">
-                    <p class="text-right"><img src="./assets/img/icono telefono menu.svg" alt="Telefono"> 01 (55) 5336
-                        1640
-                        <img src="./assets/img/icono correo menu.svg" alt="Correo"> contacto@exelmexicana.com.mx</p>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin contacto-completo-dark">
+                    <div class="container">
+                        <p class="derechos-align"><img src="./assets/img/icono telefono menu.svg" class="mr-1"
+                                alt="Telefono">
+                            01 (55)
+                            5336
+                            1640</p>
+                        <p class="ml-3 derechos-align"><img src="./assets/img/icono correo menu.svg" class="mr-1"
+                                alt="Correo">
+                            contacto@exelmexicana.com.mx</p>
+                    </div>
                 </div>
             </div>
             <!--Inicio de la navbar con el logo-->
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-3 col-xl col-lg-3 d-none d-lg-block d-xl-block without-margin">
+                <div
+                    class="col-12 col-sm-12 col-md-3 col-xl col-lg-3 back-logo d-none d-lg-block d-xl-block without-margin">
                     <div class="container img-logo" id="logo-img">
-                        <img src="./assets/img/logo_exel_blanco.svg" alt="Logo Exel Mexicana">
+                        <img src="./assets/img/exel-color.svg" class="logo-exel-mexicana-color pt-2 pb-1"
+                            alt="Logo Exel Mexicana">
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-xl-9 col-lg-9 without-margin">
                     <nav class="navbar navbar-white navbar-expand-lg navbar-black bg-white" id="menu">
                         <div class="container">
-                            <a class="navbar-brand d-none d-block d-sm-block d-md-block d-lg-none d-xl-none"
-                                href="./">Exel Mexicana</a>
+                            <img src="./assets/img/exel-color.svg"
+                                class="navbar-brand d-none d-block d-sm-block d-md-block d-lg-none d-xl-none logo-color"
+                                alt="Logo exel mexicana color">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <i class="fas fa-bars"></i>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item">
+                                    <li class="nav-item pt-3">
                                         <a class="nav-link ml-2" href="./">INICIO</span></a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item pt-3">
                                         <a class="nav-link ml-2 mr-2" href="./productos.html">PRODUCTOS</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item pt-3">
                                         <a class="nav-link ml-2 mr-2" href="./sucursales.html">SUCURSALES</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item pt-3">
                                         <a class="nav-link ml-2 mr-2" href="./nosotros.html">NOSOTROS</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item pt-3">
                                         <a class="nav-link ml-2 mr-2" href="./blog.html">BLOG</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item pt-3">
                                         <a class="nav-link ml-2 mr-2" href="./soporte.html">SOPORTE TÉCNICO</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item active-nav pt-3">
                                         <a class="nav-link btn-cotizador ml-2 mr-2 text-center"
-                                            href="./cotizador.html"><span class="text-white">COTIZADOR</span></a>
+                                            href="./cotizador.html"><span class="text-white">COTIZADOR</span>
+                                            <span class="oval"></span></a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item pt-3">
                                         <a class="nav-link ml-2 mr-2" data-toggle="modal" data-target="#buscar">
                                             <img src="./assets/img/icono buscar.svg" alt="Icono buscar">
                                         </a>
@@ -81,9 +100,9 @@
                 </div>
             </div>
         </div>
-    </header><br>
+    </header>
 
-    <div class="container mt-5">
+    <div class="container">
         <!-- Modal buscar -->
         <div class="modal left fade" id="buscar" tabindex="-1" role="dialog" aria-labelledby="buscarModal"
             aria-hidden="true">
@@ -108,8 +127,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
-                <div class="text-left">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="float-left mg-top">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="./">INICIO</a></li>
@@ -121,29 +140,29 @@
         </div>
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 align-categorias">
-                <h4 class="callout-bottom-categorias text-center">COTIZADOR</h4>
+                <h4 class="callout-bottom-title text-center">COTIZADOR</h4>
                 <span class="callout-bottom-span"></span>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin">
-                <h4 class="text-white text-center mt-2">¡COTIZA TUS PRODUCTOS AHORA!</h4>
-                <div class="align-form align-items-center">
+                <div class="align-form">
                     <form>
-                        <div class="form-row align-items-center">
+                        <div class="form-row align-items-center pl-2 pr-2 pb-5">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                                <label class="text-white" for="buscar">BUSCAR</label>
+                                <label class="text-label text-cotizador pt-2" for="buscar">BUSCAR</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="fas fa-search"></i></div>
                                     </div>
-                                    <input type="text" class="form-control" required id="buscar" placeholder="BUSCAR">
+                                    <input type="text" class="form-control form-foo uppercase" required id="buscar"
+                                        placeholder="BUSCAR">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                                <label class="text-white" for="categoria">CATEGORÍA</label>
-                                <select class="custom-select" required id="categoria">
+                                <label class="text-label text-cotizador pt-2" for="categoria">CATEGORÍA</label>
+                                <select class="custom-select form-foo uppercase" required id="categoria">
                                     <option default> SELECCIONAR</option>
                                     <option>Bandas</option>
                                     <option>Turbinas</option>
@@ -160,8 +179,8 @@
                                 </select>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                                <label class="text-white" for="marca">MARCA</label>
-                                <select class="custom-select" required id="marca">
+                                <label class="text-label text-cotizador pt-2" for="marca">MARCA</label>
+                                <select class="custom-select form-foo uppercase" required id="marca">
                                     <option default>SELECCIONAR</option>
                                     <option>ACDelco</option>
                                     <option>BorgWarner</option>
@@ -184,34 +203,58 @@
             </div>
         </div>
 
-        <div class="row mt-5">
+        <div class="row mt-3">
             <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 without-margin">
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <tbody>
                             <tr>
-                                <td scope="row" class="text-center">76128</td>
-                                <td class="uppercase
-                                ">disco acero arr fmx (4) 51-up</td>
-                                <td><input type="checkbox" class="form-control"></td>
+                                <td scope="row" class="table-text text-center pt-3 pb-3">76128</td>
+                                <td class="pt-3 pb-3"><a href="./productosPage.html"
+                                        class="table-text descripcion-table uppercase">disco acero arr
+                                        fmx (4) 51-up</a></td>
+                                <td class="text-center pt-3 pb-3">
+                                    <label class="container-check title-check text-transparent" for="check">.
+                                        <input type="checkbox" checked="checked" id="check">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
                             </tr>
                             <tr>
-                                <td scope="row" class="text-center">76128</td>
-                                <td class="uppercase
-                                ">disco acero arr fmx (4) 51-up</td>
-                                <td><input type="checkbox" class="form-control"></td>
+                                <td scope="row" class="table-text text-center pt-3 pb-3">76128</td>
+                                <td class="pt-3 pb-3"><a href="./productosPage.html"
+                                        class="table-text descripcion-table uppercase">disco acero arr
+                                        fmx (4) 51-up</a></td>
+                                <td class="text-center pt-3 pb-3">
+                                    <label class="container-check title-check text-transparent" for="check-1">.
+                                        <input type="checkbox" id="check-1">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
                             </tr>
                             <tr>
-                                <td scope="row" class="text-center">76128</td>
-                                <td class="uppercase
-                                ">disco acero arr fmx (4) 51-up</td>
-                                <td><input type="checkbox" class="form-control"></td>
+                                <td scope="row" class="table-text text-center pt-3 pb-3">76128</td>
+                                <td class="pt-3 pb-3"><a href="./productosPage.html"
+                                        class="table-text descripcion-table uppercase">disco acero arr
+                                        fmx (4) 51-up</a></td>
+                                <td class="text-center pt-3 pb-3">
+                                    <label class="container-check title-check text-transparent" for="check-2">.
+                                        <input type="checkbox" id="check-2">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
                             </tr>
                             <tr>
-                                <td scope="row" class="text-center">76128</td>
-                                <td class="uppercase
-                                ">disco acero arr fmx (4) 51-up</td>
-                                <td><input type="checkbox" class="form-control"></td>
+                                <td scope="row" class="table-text text-center pt-3 pb-3">76128</td>
+                                <td class="pt-3 pb-3"><a href="./productosPage.html"
+                                        class="table-text descripcion-table uppercase">disco acero arr
+                                        fmx (4) 51-up</a></td>
+                                <td class="text-center pt-3 pb-3">
+                                    <label class="container-check title-check text-transparent" for="check-3">.
+                                        <input type="checkbox" checked="checked" id="check-3">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -224,14 +267,14 @@
                         <input required type="text" class="form-control form-cotiza" placeholder="Teléfono">
                         <input required type="email" class="form-control form-cotiza" placeholder="Correo electrónico">
                         <input required type="text" class="form-control form-cotiza" placeholder="Empresa">
-                        <h5 class="mt-4 uppercase derechos-align"> DISCO ACERO ARR FMX (4) 51-UP</h5>
-                        <a href="#" class="derechos-align ml-5"><i class="fas fa-times"></i></a>
-                        <label required for="cantidad" class="derechos-align">
+                        <h5 class="mt-4 uppercase derechos-align card-title-cotiza"> DISCO ACERO ARR FMX (4) 51-UP</h5>
+                        <a href="#" class="derechos-align ml-5 times-icon"><i class="fas fa-times"></i></a>
+                        <label required for="cantidad" class="derechos-align card-cantidad-cotiza">
                             CANTIDAD
                             <input required id="cantidad" type="number" min="1" value="1"
                                 class="form-control derechos-align form-cotiza number-form"></label><br>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-cotizador-card">SOLICITAR COTIZACIÓN</button>
+                            <button type="submit" class="btn btn-danger-card">SOLICITAR COTIZACIÓN</button>
                         </div>
                     </form>
                 </div>
@@ -243,24 +286,24 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin">
                 <div class="image-form">
+                    <h4 class="cotiza-text text-center pt-5">¡COTIZA TUS PRODUCTOS AHORA!</h4>
                     <div class="mask-input">
-                        <h4 class="text-white text-center mt-2">¡COTIZA TUS PRODUCTOS AHORA!</h4>
-                        <div class="align-form align-items-center">
+                        <div class="align-form">
                             <form>
-                                <div class="form-row align-items-center">
+                                <div class="form-row align-items-center pl-2 pr-2 pb-5">
                                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                                        <label class="text-white" for="buscar">BUSCAR</label>
+                                        <label class="text-label pt-2" for="buscar">BUSCAR</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text"><i class="fas fa-search"></i></div>
                                             </div>
-                                            <input type="text" class="form-control form-foo" required id="buscar"
-                                                placeholder="BUSCAR">
+                                            <input type="text" class="form-control form-foo uppercase" required
+                                                id="buscar" placeholder="BUSCAR">
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                                        <label class="text-white" for="categoria">CATEGORÍA</label>
-                                        <select class="custom-select form-foo" required id="categoria">
+                                        <label class="text-label pt-2" for="categoria">CATEGORÍA</label>
+                                        <select class="custom-select form-foo uppercase" required id="categoria">
                                             <option default> SELECCIONAR</option>
                                             <option>Bandas</option>
                                             <option>Turbinas</option>
@@ -277,8 +320,8 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                                        <label class="text-white" for="marca">MARCA</label>
-                                        <select class="custom-select form-foo" required id="marca">
+                                        <label class="text-label pt-2" for="marca">MARCA</label>
+                                        <select class="custom-select form-foo uppercase" required id="marca">
                                             <option default>SELECCIONAR</option>
                                             <option>ACDelco</option>
                                             <option>BorgWarner</option>
@@ -310,16 +353,17 @@
                 <div class="catalogo-img">
                     <div class="mask">
                         <div class="container">
-                            <div class="callout-bottom">
-                                <h3 class="text-white">DESCARGA NUESTRO CATALOGO</h3>
+                            <div class="callout-bottom mt-5">
+                                <h3 class="title-slider">DESCARGA NUESTRO CATALOGO</h3>
                             </div>
-                            <h5 class="text-white mt-2">CALIDAD GARANTIZADA
+                            <h5 class="subtitle-slider mt-2">CALIDAD GARANTIZADA
                             </h5>
-                            <p class="text-white">En Exel Mexicana nos preocupamos porque tengas disponibles los mejores
+                            <p class="text-slider">En Exel Mexicana nos preocupamos porque tengas disponibles los
+                                mejores
                                 productos para el área
                                 automotriz. Nuestro compromiso es ofrecerte las mejores piezas que existen en el
                                 mercado. <span class="font-weight-bold">¡Conócenos!</span></p>
-                            <a class="btn btn-danger" href="#">DESCARGA AQUÍ</a>
+                            <a class="btn btn-danger mt-4 mb-5" href="#">DESCARGA AQUÍ</a>
                         </div>
                     </div>
                 </div>
@@ -331,18 +375,19 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin">
                 <div class="slider-marcas">
-                    <div><img src="./assets/img/logo_acdelco.png" class="img-fluid" alt="ACDelco"></div>
-                    <div><img src="./assets/img/logo_borgwarner.png" class="img-fluid" alt="BorgWarner"></div>
-                    <div><img src="./assets/img/logo_exedy.png" class="img-fluid" alt="Exedy"></div>
-                    <div><img src="./assets/img/logo_genuine.png" class="img-fluid" alt="Genuine"></div>
-                    <div><img src="./assets/img/logo_hayden.png" class="img-fluid" alt="hayden"></div>
-                    <div><img src="./assets/img/logo_lubegard.png" class="img-fluid" alt="lubegard"></div>
-                    <div><img src="./assets/img/logo_lubrigold.png" class="img-fluid" alt="lubrigold"></div>
-                    <div><img src="./assets/img/logo_rostra.png" class="img-fluid" alt="rostra"></div>
-                    <div><img src="./assets/img/logo_sonnax.png" class="img-fluid" alt="sonnax"></div>
-                    <div><img src="./assets/img/logo_transgo.png" class="img-fluid" alt="TransGo"></div>
-                    <div><img src="./assets/img/logo_transtec.png" class="img-fluid" alt="transtec"></div>
-                    <div><img src="./assets/img/logo_zf.png" class="img-fluid" alt="ZF"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_acdelco.png" alt="ACDelco"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_borgwarner.png" alt="BorgWarner"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_exedy.png" alt="Exedy"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_genuine.png" alt="Genuine"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_hayden.png" alt="hayden"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_lubegard.png" alt="lubegard"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_lubrigold.png" alt="lubrigold"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_rostra.png" alt="rostra"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_sonnax.png" alt="sonnax"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_transgo.png" alt="TransGo"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_transtec.png" alt="transtec"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/logo_zf.png" alt="ZF"></div>
+                    <div class="pt-2 pb-2"><img src="./assets/img/brand.gif" alt="SPX"></div>
                 </div>
             </div>
         </div>
@@ -356,21 +401,44 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <h4 class="text-white font-weight-bold mt-2 mb-3">PONTE EN CONTACTO</h4>
-                                    <a class="text-white mb-3" href="tel:+524423691470"><img
-                                            src="./assets/img/icono telefono.svg" alt="Telefono"> (442) 369 1470</a>
-                                    <a class="text-white mt-2 mb-3" href="mailto:contacto@exelmexicana.com.mx"><img
-                                            src="./assets/img/icono correo.svg" alt="Correo">
-                                        contacto@exelmexicana.com.mx</a>
-                                    <address class="text-white mt-2 mb-3"><img src="./assets/img/icono ubicacion.svg"
-                                            alt="ubicación"> Av. Gustavo Baz N° 4863 Col. San
-                                        Pedro Barrientos Tlalnepantla de
-                                        Baz Estado de México C.P. 54010</address>
-                                    <button href="#" class="btn btn-mapa mb-3"><a class="text-white" href="#">VER EN
+                                    <h4 class="title-slider">PONTE EN CONTACTO</h4>
+                                    <div class="media mt-3">
+                                        <img src="./assets/img/icono telefono.svg" alt="Telefono">
+                                        <div class="media-body">
+                                            <a class="contacto-text text-white" href="tel:+524423691470"> (442) 369
+                                                1470</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media mt-3">
+                                        <img src="./assets/img/icono correo.svg" alt="Correo">
+                                        <div class="media-body">
+                                            <a class="contacto-text text-white"
+                                                href="mailto:contacto@exelmexicana.com.mx">
+                                                contacto@exelmexicana.com.mx</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media mt-3">
+                                        <img src="./assets/img/icono ubicacion.svg" class="derechos-align"
+                                            alt="ubicación">
+                                        <div class="media-body">
+                                            <p class="contacto-text text-white">Av. Gustavo
+                                                Baz N° 4863 Col.
+                                                San
+                                                Pedro Barrientos Tlalnepantla de
+                                                Baz Estado de México C.P. 54010</p>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-mapa mb-3 mt-3"><a target="blank"
+                                            class="contacto-text text-white"
+                                            href="https://maps.google.com/?q=19.576712,-99.203147">VER
+                                            EN
                                             MAPA <i class="fas fa-angle-right"></i></a></button>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <h6 class="text-white font-weight-bold mt-2 mb-2">CONTACTA UN ASESOR</h6>
+                                    <h6 class="text-contacta text-white">CONTACTA UN ASESOR</h6>
                                     <form>
                                         <div class="form-row">
                                             <div class="col-md-6 mb-3">
@@ -395,7 +463,8 @@
                                             </div>
                                         </div>
                                         <div class="text-right">
-                                            <button class="btn btn-enviar-asesor" type="submit">Enviar</button>
+                                            <button class="btn btn-enviar-asesor uppercase"
+                                                type="submit">Enviar</button>
                                         </div>
                                     </form>
                                 </div>
@@ -410,12 +479,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 without-margin">
-                <div class="google-maps">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3759.1793764936924!2d-99.20539818446265!3d19.576814386802543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d9b0a4454b1%3A0xa160bd554213d642!2sAv.%20Gustavo%20Baz%20Prada%204863%2C%20Industrial%20Barrientos%2C%2054015%20Tlalnepantla%20de%20Baz%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1591749794481!5m2!1ses!2smx"
-                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="true"
-                        aria-hidden="false" tabindex="0"></iframe>
-                </div>
+                <div class="google-maps" id="maps"></div>
             </div>
         </div>
     </div>
@@ -426,41 +490,57 @@
                 <div class="col-12 col-md my-auto mb-3 text-center">
                     <img src="./assets/img/logo_exel_blanco.svg" class="img-fluid footer-logo" alt="Logo Exel Mexicana">
                 </div>
-                <div class="col-6 col-md mt-3">
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-white font-weight-bold" href="./">INICIO</a></li>
-                        <li><a class="text-white font-weight-bold" href="./productos.html">SUCURSALES</a></li>
-                        <li><a class="text-white font-weight-bold" href="./nosotros.html">NOSOTROS</a></li>
-                        <li><a class="text-white font-weight-bold" href="./blog.html">BLOG</a></li>
-                        <li><a class="text-white font-weight-bold" href="./contacto.html">CONTACTO</a></li>
-                        <li><a class="text-white font-weight-bold" href="./soporte.html">SOPORTE TÉCNICO</a></li>
+                <div class="col-12 col-md mt-3">
+                    <ul class="list-unstyled">
+                        <li><a class="footer-link text-white" href="./">INICIO</a></li>
+                        <li class="mt-1"><a class="footer-link text-white" href="./productos.html">SUCURSALES
+                        <li class="mt-1"><a class="footer-link text-white" href="./nosotros.html">NOSOTROS</a></li>
+                        <li class="mt-1"><a class="footer-link text-white" href="./blog.html">BLOG</a></li>
+                        <li class="mt-1"><a class="footer-link text-white" href="./contacto.html">CONTACTO</a></li>
+                        <li class="mt-1"><a class="footer-link text-white" href="./soporte.html">SOPORTE TÉCNICO</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md mt-3">
-                    <h5 class="text-white font-weight-bold text-left" style="padding-left: 0px;">PRODUCTOS</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-white" href="#">FILTROS</a></li>
-                        <li><a class="text-white" href="#">BANDAS</a></li>
-                        <li><a class="text-white" href="#">TURBINAS</a></li>
-                        <li><a class="text-white" href="#">VOLANTES</a></li>
-                        <li><a class="text-white" href="#">SHIFT KITS</a></li>
+                <div class="col-12 col-md mt-3">
+                    <h5 class="footer-link text-white text-left" style="padding-left: 0px;">PRODUCTOS
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">FILTROS</a>
+                        </li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">BANDAS</a>
+                        </li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">TURBINAS</a>
+                        </li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">VOLANTES</a>
+                        </li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">SHIFT KITS</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md mt-5">
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-white" href="#">ENFRIADORES</a></li>
-                        <li><a class="text-white" href="#">MISCELÁNEOS</a></li>
-                        <li><a class="text-white" href="#">JUNTAS Y LIGAS</a></li>
-                        <li><a class="text-white" href="#">DISCOS DE PASTA/a></li>
-                        <li><a class="text-white" href="#">DISCOS DE ACERO</a></li>
+                <div class="col-12 col-md mt-4">
+                    <ul class="list-unstyled pt-2">
+                        <li class="mt-1"><a class="footer-links-light text-white"
+                                href="./productos.html">ENFRIADORES</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white"
+                                href="./productos.html">MISCELÁNEOS</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">JUNTAS Y
+                                LIGAS</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">DISCOS DE
+                                PASTA</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">DISCOS DE
+                                ACERO</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md mt-5">
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-white" href="#">ACEITES Y ADITIVOS</a></li>
-                        <li><a class="text-white" href="#">PARTES ELÉCTRICAS</a></li>
-                        <li><a class="text-white" href="#">BUJES, RODANAS Y RETENES</a></li>
-                        <li><a class="text-white" href="#">RESPUESTOS DE DIRECCIONES</a></li>
+                <div class="col-12 col-md mt-4">
+                    <ul class="list-unstyled pt-2">
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">ACEITES Y
+                                ADITIVOS</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">PARTES
+                                ELÉCTRICAS</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">BUJES, RODANAS
+                                Y RETENES</a></li>
+                        <li class="mt-1"><a class="footer-links-light text-white" href="./productos.html">RESPUESTOS DE
+                                DIRECCIONES</a></li>
                     </ul>
                 </div>
             </div>
@@ -471,17 +551,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 copy">
-                    <p class="text-gray derechos-align"><i class="far fa-copyright"></i> 2020 Exel Mexicana. Todos los
-                        derechos reservados</p>
-                    <a href="#" class="derechos-align">Aviso legal</a>
+                    <p><i class="far fa-copyright"></i> 2020 Exel Mexicana.
+                        Todos los
+                        derechos reservados <a href="#">Aviso legal</a></p>
+
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <p class="text-right brand-industry">Developed by <a href="https://thebrandindustry.com"
-                            class="text-white brand-industry">Brand Industry</a></p>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+                    <p>Developed by
+                        <a target="blank" href="https://thebrandindustry.com" class="text-white">Brand Industry</a></p>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="./js/headroom.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
