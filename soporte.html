@@ -104,7 +104,7 @@
         </div>
     </header>
 
-    <div class="container mt-5">
+    <div class="container">
         <!-- Modal buscar -->
         <div class="modal left fade" id="buscar" tabindex="-1" role="dialog" aria-labelledby="buscarModal"
             aria-hidden="true">
@@ -149,7 +149,7 @@
 
         <div class="row mt-5">
             <!--inicio dropdown btn-soporte-->
-            <div class="col-12 col-sm-4 d-none d-sm-block d-block d-md-none d-lg-none d-xl-none">
+            <div class="col-12 col-sm-12 d-none d-sm-block d-block d-md-none d-lg-none d-xl-none">
                 <div class="dropdown">
                     <a class="btn btn-soporte dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -157,122 +157,272 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item-soporte" href="#">GARANTÍA</a>
-                        <a class="dropdown-item-soporte" href="#">ENVÍOS</a>
-                        <a class="dropdown-item-soporte" href="#">DEVOLUCIÓN</a>
-                        <a class="dropdown-item-soporte" href="#">FORMAS DE PAGO</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 d-none d-sm-block d-block d-md-none d-lg-none d-xl-none">
-                <div class="dropdown">
-                    <a class="btn btn-soporte active-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ENVÍOS
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item-soporte" href="#">Action</a>
-                        <a class="dropdown-item-soporte" href="#">Another action</a>
-                        <a class="dropdown-item-soporte" href="#">Something else here</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 d-none d-sm-block d-block d-md-none d-lg-none d-xl-none">
-                <div class="dropdown">
-                    <a class="btn btn-soporte dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        DEVOLUCIÓN
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item-soporte" href="#">Action</a>
-                        <a class="dropdown-item-soporte" href="#">Another action</a>
-                        <a class="dropdown-item-soporte" href="#">Something else here</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 d-none d-sm-block d-block d-md-none d-lg-none d-xl-none">
-                <div class="dropdown">
-                    <a class="btn btn-soporte dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        FORMAS DE PAGO
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item-soporte" href="#">Action</a>
-                        <a class="dropdown-item-soporte" href="#">Another action</a>
-                        <a class="dropdown-item-soporte" href="#">Something else here</a>
+                        <a class="dropdown-item-soporte" id="pills-garantia-tab" data-toggle="pill"
+                            href="#pills-garantia" role="tab" aria-controls="pills-garantia"
+                            aria-selected="false">GARANTÍA</a>
+                        <a class="dropdown-item-soporte" id="pills-envios-tab" data-toggle="pill" href="#pills-envios"
+                            role="tab" aria-controls="pills-envios" aria-selected="true">ENVÍOS</a>
+                        <a class="dropdown-item-soporte" id="pills-envios-tab" data-toggle="pill" href="#pills-envios"
+                            role="tab" aria-controls="pills-envios" aria-selected="true">DEVOLUCIÓN</a>
+                        <a class="dropdown-item-soporte" id="pills-pago-tab" data-toggle="pill" href="#pills-pago"
+                            role="tab" aria-controls="pills-pago" aria-selected="false">FORMAS DE PAGO</a>
                     </div>
                 </div>
             </div>
             <!--fin dropdown-->
-            <div
-                class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 without-margin d-none d-md-block d-lg-block d-xl-block">
-                <div class="dialogo">
-                    <p class="text-dialogo">GARANTÍA</p>
-                </div>
+            <!--inicia pills-->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-none d-md-block d-lg-block d-xl-block">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="background-color: aqua;">
+                    <li class="dialogo" role="presentation">
+                        <a class="nav-link text-dialogo" id="pills-garantia-tab" data-toggle="pill"
+                            href="#pills-garantia" role="tab" aria-controls="pills-garantia"
+                            aria-selected="false">GARANTÍA</a>
+                    </li>
+                    <li class="dialogo" role="presentation">
+                        <a class="nav-link text-dialogo active" id="pills-envios-tab" data-toggle="pill"
+                            href="#pills-envios" role="tab" aria-controls="pills-envios" aria-selected="true">ENVÍOS</a>
+                    </li>
+                    <li class="dialogo" role="presentation">
+                        <a class="nav-link text-dialogo" id="pills-devolucion-tab" data-toggle="pill"
+                            href="#pills-devolucion" role="tab" aria-controls="pills-devolucion"
+                            aria-selected="false">DEVOLUCIÓN</a>
+                    </li>
+                    <li class="dialogo" role="presentation">
+                        <a class="nav-link text-dialogo" id="pills-pago-tab" data-toggle="pill" href="#pills-pago"
+                            role="tab" aria-controls="pills-pago" aria-selected="false">FORMAS DE PAGO</a>
+                    </li>
+                </ul>
             </div>
-            <div
-                class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 without-margin d-none d-md-block d-lg-block d-xl-block">
-                <div class="active-soporte">
-                    <p class="text-dialogo">ENVÍOS</p>
-                </div>
-            </div>
-            <div
-                class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 without-margin d-none d-md-block d-lg-block d-xl-block">
-                <div class="dialogo">
-                    <p class="text-dialogo">DEVOLUCIÓN</p>
-                </div>
-            </div>
-            <div
-                class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 without-margin d-none d-md-block d-lg-block d-xl-block">
-                <div class="dialogo">
-                    <p class="text-dialogo">FORMAS DE PAGO</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-5">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="align-categorias">
-                    <h4 class="callout-bottom-title subtitle-soporte text-center">POLÍTICAS DE ENVÍO</h4>
-                    <span class="callout-bottom-span bottom-span"></span>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-envios" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="row mt-5">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">POLÍTICAS DE ENVÍO
+                                    </h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">ENVÍOS INTERNACIONALES
+                                    </h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mb-5">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">RASTREO DE PEDIDOS
+                                    </h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-garantia" role="tabpanel" aria-labelledby="pills-garantia-tab">
+                        <div class="row mt-5">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">LOREM GARANTÍA</h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">LOREM GARANTÍA</h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mb-5">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">LOREM GARANTÍA</h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-devolucion" role="tabpanel"
+                        aria-labelledby="pills-devolucion-tab">
+                        <div class="row mt-5">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">LOREM DEVOLUCIÓN</h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">LOREM DEVOLUCIÓN</h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mb-5">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">LOREM DEVOLUCIÓN</h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-pago" role="tabpanel" aria-labelledby="pills-pago-tab">
+                        <div class="row mt-5">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">LOREM PAGO</h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">LOREM PAGO</h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mb-5">
+                                <div class="align-categorias">
+                                    <h4 class="callout-bottom-title subtitle-soporte text-center">LOREM PAGO</h4>
+                                    <span class="callout-bottom-span bottom-span"></span>
+                                </div>
+                                <p class="text-soporte mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-soporte mt-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum
-                </p>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
-                <div class="align-categorias">
-                    <h4 class="callout-bottom-title subtitle-soporte text-center">ENVÍOS INTERNACIONALES</h4>
-                    <span class="callout-bottom-span bottom-span"></span>
-                </div>
-                <p class="text-soporte mt-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum
-                </p>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mb-5">
-                <div class="align-categorias">
-                    <h4 class="callout-bottom-title subtitle-soporte text-center">RASTREO DE PEDIDOS</h4>
-                    <span class="callout-bottom-span bottom-span"></span>
-                </div>
-                <p class="text-soporte mt-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum
-                </p>
-            </div>
+            <!--fin pilss-->
         </div>
     </div>
 

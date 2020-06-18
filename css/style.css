@@ -1654,11 +1654,16 @@ footer {
     font-weight: normal;
 }
 
-.dialogo, .active-soporte, .btn-soporte {
-    width: 100%;
+.dialogo, .btn-soporte {
+    width: 25%;
     background-color: var(--white-three);
     color: var(--greyish-brown);
-    line-height: 28px;
+    position: relative;
+}
+
+.dialogo > .active {
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
@@ -1673,14 +1678,19 @@ footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: var(--greyish-brown);
 }
 
-.active-soporte {
+.text-dialogo:hover{
+    color: var(--greyish-brown-two);
+}
+
+.dialogo > .active  {
     background-color: var(--peacock-blue) !important;
     color: var(--white) !important;
 }
 
-.active-soporte::after {
+.dialogo > .active::after {
     position: absolute;
     content: '';
     display: block;
@@ -1696,6 +1706,7 @@ footer {
     border-radius: 0px;
     font-size: 13px;
     margin-top: 1em;
+    width: 100%;
 }
 
 .dropdown-item-soporte {
