@@ -671,6 +671,11 @@ header {
     color: var(--white);
 }
 
+.margin-productos {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 .btn-buscar {
     height: 35px;
     margin-top: 48px;
@@ -1932,11 +1937,13 @@ footer {
         width: 90% !important;
     }
     .big-img {
-        width: 60% !important;
+        width: 50% !important;
     }
-
+    .rodanas-img {
+        width: 80%;
+    }
     .medium-img {
-        width: 70% !important;
+        width: 60% !important;
     }
 
     .img-bottom-right, .img-bottom-left {
@@ -2057,6 +2064,9 @@ footer {
     .img-bottom-right, .img-bottom-left {
         width: 30% !important;
     }
+    .rodanas-img {
+        width: 80% !important;
+    }
     .medium-img {
         width: 70% !important;
     }
@@ -2159,7 +2169,10 @@ footer {
         width: 80% !important;
     }
     .big-img {
-        width: 50% !important;
+        width: 70% !important;
+    }
+    .rodanas-img {
+        width: 60% !important;
     }
     .card-nosotros-left {
         left: 100px;
@@ -2192,6 +2205,9 @@ footer {
     .catalogo-img {
         height: 40vh;
     }
+    .img-bottom-right, .img-bottom-left {
+        width: 70% !important;
+    }
     .sucursales-side, .google-maps-sucursales {
         height: 80vh;
     }
@@ -2201,7 +2217,6 @@ footer {
     .img-marcas {
         width: 130px;
     }
-    
     .img-marcas-bg {
         width: 70px;
     }
@@ -2271,6 +2286,9 @@ footer {
     .medium-img {
         width: 80% !important;
     }
+    .rodanas-img {
+        width: 80% !important;
+    }
     .big-img {
         width: 80% !important;
     }
@@ -2287,6 +2305,9 @@ footer {
     }
     .catalogo-img {
         height: 50vh;
+    }
+    .img-bottom-right, .img-bottom-left {
+        width: 70% !important;
     }
     .sucursales-side, .google-maps-sucursales {
         height: 90vh;
@@ -2362,7 +2383,12 @@ footer {
     .catalogo-img {
         height: 40vh;
     }
-
+    .rodanas-img {
+        width: 80% !important;
+    }
+    .img-bottom-right, .img-bottom-left {
+        width: 70% !important;
+    }
     .sucursales-side, .google-maps-sucursales {
         height: 80vh;
     }
