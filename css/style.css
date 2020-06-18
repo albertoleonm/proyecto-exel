@@ -1981,6 +1981,18 @@ footer {
     .img-bottom-right, .img-bottom-left {
         width: 50% !important;
     }
+    .big-img-volante {
+        width: 55% !important;
+    }
+    .big-img-juntas {
+        width: 110% !important;
+    }
+    .big-img-acero {
+        width: 50% !important;
+    }
+    .medium-img-productos {
+        width: 50% !important;
+    }
     .modal.left .modal-dialog {
         width: 90% !important;
     }
@@ -2096,6 +2108,18 @@ footer {
     .img-bottom-right, .img-bottom-left {
         width: 30% !important;
     }
+    .big-img-volante {
+        width: 40% !important;
+    }
+    .big-img-juntas {
+        width: 90% !important;
+    }
+    .big-img-acero {
+        width: 40% !important;
+    }
+    .medium-img-productos {
+        width: 40% !important;
+    }
     .rodanas-img {
         width: 80% !important;
     }
@@ -2206,6 +2230,18 @@ footer {
     .rodanas-img {
         width: 60% !important;
     }
+    .big-img-volante {
+        width: 90% !important;
+    }
+    .big-img-juntas {
+        width: 200% !important;
+    }
+    .big-img-acero {
+        width: 60% !important;
+    }
+    .medium-img-productos {
+        width: 70% !important;
+    }
     .card-nosotros-left {
         left: 100px;
         top: -180px;
@@ -2236,9 +2272,6 @@ footer {
     }
     .catalogo-img {
         height: 40vh;
-    }
-    .img-bottom-right, .img-bottom-left {
-        width: 70% !important;
     }
     .sucursales-side, .google-maps-sucursales {
         height: 80vh;
@@ -2324,6 +2357,18 @@ footer {
     .big-img {
         width: 80% !important;
     }
+    .big-img-volante {
+        width: 90% !important;
+    }
+    .big-img-juntas {
+        width: 110% !important;
+    }
+    .big-img-acero {
+        width: 60% !important;
+    }
+    .medium-img-productos {
+        width: 70% !important;
+    }
     .card-nosotros-left {
         left: -80px;
         width: 580px;
@@ -2337,9 +2382,6 @@ footer {
     }
     .catalogo-img {
         height: 50vh;
-    }
-    .img-bottom-right, .img-bottom-left {
-        width: 70% !important;
     }
     .sucursales-side, .google-maps-sucursales {
         height: 90vh;
@@ -2418,7 +2460,16 @@ footer {
     .rodanas-img {
         width: 80% !important;
     }
-    .img-bottom-right, .img-bottom-left {
+    .big-img-volante {
+        width: 90% !important;
+    }
+    .big-img-juntas {
+        width: 110% !important;
+    }
+    .big-img-acero {
+        width: 60% !important;
+    }
+    .medium-img-productos {
         width: 70% !important;
     }
     .sucursales-side, .google-maps-sucursales {
