@@ -1082,6 +1082,10 @@ footer {
     color: var(--greyish-brown-two);
 }
 
+.icon-formas {
+    font-size: 20px;
+}
+
 .form-cotiza {
     margin-top: 20px;
     background-color: var(--white);
