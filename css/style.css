@@ -16,6 +16,7 @@
     --dark: #202e3f;
     --white-four: #e4e4e4;
     --white-five: #ebebeb;
+    --white-six: #f0f0f0;
 }
 
 * {
@@ -1928,6 +1929,30 @@ footer {
     letter-spacing: normal;
     color: var(--greyish-brown-two);
     margin-bottom: 100px;
+}
+
+.filtro-busqueda-gray {
+    background-color: var(--white-six);
+}
+
+.text-busqueda {
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: var(--greyish-brown);
+    padding-left: 20px;
+    padding-top: 15px;
+    box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+}
+
+.text-busqueda span {
+    font-weight: bold;
 }
 
 /* col */
