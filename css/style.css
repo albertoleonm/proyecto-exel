@@ -186,6 +186,59 @@ header {
     color: var(--black);
 }
 
+/* autocomplete */
+
+.autocomplete-suggestions {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid var(--white);
+    background: var(--white);
+    cursor: pointer;
+    overflow: auto;
+    max-height: 100% !important;
+    text-transform: uppercase;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.31;
+    letter-spacing: 0.34px;
+    color: var(--black-two);
+}
+
+.autocomplete-suggestion {
+    padding: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.autocomplete-no-suggestion {
+    padding: 2px 5px;
+}
+
+.autocomplete-selected {
+    background: var(--white-two);
+}
+
+.autocomplete-suggestions strong {
+    font-weight: bold;
+    color: var(--black);
+}
+
+.autocomplete-group {
+    padding: 2px 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--black-two);
+    display: block;
+    border-bottom: 1px solid #000;
+    background: aqua;
+}
+
+/*fin autocomplete*/
+
 .title-slider {
     font-family: 'Raleway', sans-serif !important;
     font-size: 30px;
@@ -1843,6 +1896,11 @@ footer {
 
 .img-marcas-bg {
     width: 100px;
+}
+
+.imagen-error {
+    position: relative;
+    left: -100px;
 }
 
 .numeros_404 {

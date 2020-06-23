@@ -115,14 +115,16 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="input-group flex-nowrap">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon-wrapping"><img
-                                        src="./assets/img/icono buscar.svg" alt="Svg buscar"></span>
+                        <form action="./busqueda.html" method="get">
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="addon-wrapping"><img
+                                            src="./assets/img/icono buscar.svg" alt="Svg buscar"></span>
+                                </div>
+                                <input type="text" class="form-buscar" placeholder="Buscar" id="tags"
+                                    aria-describedby="addon-wrapping">
                             </div>
-                            <input type="text" class="form-buscar" placeholder="Buscar"
-                                aria-describedby="addon-wrapping">
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -578,6 +580,8 @@
     <!--Slick JS-->
     <script src="js/slick.js"></script>
     <script src="./js/config-slick.js"></script>
+    <script src="./js/jquery.autocomplete.min.js"></script>
+    <script src="./js/autocomplete.js"></script>
 </body>
 
 </html>

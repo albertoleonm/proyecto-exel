@@ -116,14 +116,16 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="input-group flex-nowrap">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon-wrapping"><img
-                                        src="./assets/img/icono buscar.svg" alt="Svg buscar"></span>
+                        <form action="./busqueda.html" method="get">
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="addon-wrapping"><img
+                                            src="./assets/img/icono buscar.svg" alt="Svg buscar"></span>
+                                </div>
+                                <input type="text" class="form-buscar" placeholder="Buscar" id="tags"
+                                    aria-describedby="addon-wrapping">
                             </div>
-                            <input type="text" class="form-buscar" placeholder="Buscar"
-                                aria-describedby="addon-wrapping">
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -149,7 +151,8 @@
         <div class="row mt-5">
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 without-margin">
                 <div class="sucursales-side">
-                    <div class="media sucursales-content" onclick="zoomMarker({lat: 19.576712, lng: -99.203147}, 'Exel Mexicana | Oficina Central');">
+                    <div class="media sucursales-content"
+                        onclick="zoomMarker({lat: 19.576712, lng: -99.203147}, 'Exel Mexicana | Oficina Central');">
                         <div class="media-body">
                             <h5 class="mt-0 title-sucursal mb-1">Oficina Central</h5>
                             <p class="text-sucursal">Av. Presidente Juárez #2002, Col. Industrial Puente de Vigas,
@@ -164,7 +167,8 @@
                         </div>
                         <i class="fas fa-chevron-right flecha-sucursales"></i>
                     </div>
-                    <div class="media sucursales-content" onclick="zoomMarker({lat: 20.6487195, lng: -103.3350143}, 'Exel Mexicana | Suc. Guadalajara');">
+                    <div class="media sucursales-content"
+                        onclick="zoomMarker({lat: 20.6487195, lng: -103.3350143}, 'Exel Mexicana | Suc. Guadalajara');">
                         <div class="media-body">
                             <h5 class="mt-3 title-sucursal mb-1">Suc. Guadalajara</h5>
                             <p class="text-sucursal">Calzada Jesús González Gallo #1340, Col. Quinta Velarde,
@@ -178,7 +182,8 @@
                         </div>
                         <i class="fas fa-chevron-right flecha-sucursales"></i>
                     </div>
-                    <div class="media sucursales-content" onclick="zoomMarker({lat: 20.9662173, lng: -89.640838}, 'Exel Mexicana | Suc. Mérida');">
+                    <div class="media sucursales-content"
+                        onclick="zoomMarker({lat: 20.9662173, lng: -89.640838}, 'Exel Mexicana | Suc. Mérida');">
                         <div class="media-body">
                             <h5 class="mt-3 title-sucursal mb-1">Suc. Mérida</h5>
                             <p class="text-sucursal">Av. Itzaes Calle 86 #484G x 59A y 57, Col. Centro, Mérida, Yucatán,
@@ -193,7 +198,8 @@
                         </div>
                         <i class="fas fa-chevron-right flecha-sucursales"></i>
                     </div>
-                    <div class="media sucursales-content" onclick="zoomMarker({lat: 19.0684492, lng: -98.2004235}, 'Exel Mexicana | Suc. Puebla');">
+                    <div class="media sucursales-content"
+                        onclick="zoomMarker({lat: 19.0684492, lng: -98.2004235}, 'Exel Mexicana | Suc. Puebla');">
                         <div class="media-body">
                             <h5 class="mt-3 title-sucursal mb-1">Suc. Puebla</h5>
                             <p class="text-sucursal">
@@ -208,7 +214,8 @@
                         </div>
                         <i class="fas fa-chevron-right flecha-sucursales"></i>
                     </div>
-                    <div class="media sucursales-content" onclick="zoomMarker({lat: 22.1692564, lng: -100.9725704}, 'Exel Mexicana | Suc. San Luís Potosí');">
+                    <div class="media sucursales-content"
+                        onclick="zoomMarker({lat: 22.1692564, lng: -100.9725704}, 'Exel Mexicana | Suc. San Luís Potosí');">
                         <div class="media-body">
                             <h5 class="mt-3 title-sucursal mb-1">Suc. San Luís Potosí</h5>
                             <p class="text-sucursal">20 de Noviembre #1905-A, Barrio de Tlaxcala, San Luis Potosí, SLP,
@@ -518,6 +525,8 @@
     <!--Slick JS-->
     <script src="js/slick.js"></script>
     <script src="./js/config-slick.js"></script>
+    <script src="./js/jquery.autocomplete.min.js"></script>
+    <script src="./js/autocomplete.js"></script>
 </body>
 
 </html>
